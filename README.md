@@ -76,5 +76,5 @@ MF decentralized training: PoC to check implementation correctness
 ```
 
 
-# Credit
+# Code Reference
 Rafael Pires
