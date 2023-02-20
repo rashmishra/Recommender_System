@@ -3,7 +3,7 @@ The source code for a decentralized recommender system that uses Intel SGX to en
 
 # Dependencies and compilation
 If your machine has SGX support, you need the [Intel SGX SDK](https://01.org/intel-software-guard-extensions) to run Rex. Used version [2.9.1](https://01.org/intel-softwareguard-extensions/downloads/intel-sgx-linux-2.9.1-release).
-To use remote attestation, you also need [DCAP](https://www.intel.com/content/www/us/en/developer/articles/guide/intel-software-guard-extensions-data-center-attestation-primitives-quick-install-guide.html). The used version is [1.8](https://01.org/intel-softwareguard-extensions/downloads/intel-sgx-dcap-1.8-release).
+To use remote attestation, you also need [DCAP](https://www.intel.com/content/www/us/en/developer/articles/guide/intel-software-guard-extensions-data-center-attestation-primitives-quick-install-guide.html). Used version [1.8](https://01.org/intel-softwareguard-extensions/downloads/intel-sgx-dcap-1.8-release).
 
 Alternatively, you may still test a non-SGX version of Rex (without security or attestation) and a simulation environment of the same decentralized recommender if you do not have access to SGX servers.
 
