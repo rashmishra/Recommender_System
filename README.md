@@ -1,32 +1,12 @@
 # Rex: SGX decentralized recommender
-This repository contains the code of a decentralized recommender system that 
-shares data instead of models and protects user's privacy by using Intel SGX.
-Its description and evaluation were published in the paper
-["TEE-based decentralized recommender systems: The raw data sharing redemption"](https://arxiv.org/pdf/2202.11655),
-which was presented in the 36th International Parallel and Distributed Processing
-Symposium (IPDPS) on May 31st 2022.
-
-If this code or the ideas in the paper are somehow helpful to you,
-please cite us according to this bib(liographic) entry:
-```
-@inproceedings{dhasade:2022:rex,
-  author={Dhasade, Akash
-      and Dresevic, Nevena
-      and Kermarrec, Anne-Marie
-      and Pires, Rafael},
-  booktitle={36th {IEEE} International Parallel and Distributed Processing Symposium ({IPDPS})}, 
-  title={{TEE}-based decentralized recommender systems: The raw data sharing redemption},
-  pages={447--458},
-  doi={10.1109/IPDPS53621.2022.00050},
-  year={2022},
-}
-```
+The source code for a decentralized recommender system that uses Intel SGX to ensure user privacy and shares data rather than models is available in this repository.
 
 # Dependencies and compilation
-If your machine has SGX support, you need the [Intel SGX SDK](https://01.org/intel-software-guard-extensions) to run Rex. We tried it with version [2.9.1](https://01.org/intel-softwareguard-extensions/downloads/intel-sgx-linux-2.9.1-release).
-In case you also want to try remote attestation, you also need [DCAP](https://www.intel.com/content/www/us/en/developer/articles/guide/intel-software-guard-extensions-data-center-attestation-primitives-quick-install-guide.html). We tried it with version [1.8](https://01.org/intel-softwareguard-extensions/downloads/intel-sgx-dcap-1.8-release).
+If your machine has SGX support, you need the [Intel SGX SDK](https://01.org/intel-software-guard-extensions) to run Rex. Used version [2.9.1](https://01.org/intel-softwareguard-extensions/downloads/intel-sgx-linux-2.9.1-release).
+To use remote attestation, you also need [DCAP](https://www.intel.com/content/www/us/en/developer/articles/guide/intel-software-guard-extensions-data-center-attestation-primitives-quick-install-guide.html). The used version is [1.8](https://01.org/intel-softwareguard-extensions/downloads/intel-sgx-dcap-1.8-release).
 
-Otherwise, if you do not have access to SGX servers, you can still try a non-SGX version of Rex (with no security or attestation, of course), along with a simulation environment of the same decentralized recommender.
+Alternatively, you may still test a non-SGX version of Rex (without security or attestation) and a simulation environment of the same decentralized recommender if you do not have access to SGX servers.
+
 On Ubuntu, you can meet all non-SGX requirements with the following command:
 ```
 $ sudo apt install build-essential libboost-all-dev libzmq3-dev
@@ -95,25 +75,6 @@ MF decentralized training: PoC to check implementation correctness
   -V, --version              Print program version
 ```
 
-# Contact
-If you think we omitted something that could be helpful for anyone willing to
-try our code or reproduce our results, please do not hesitate to contact us.
 
-# Disclaimer
-This is a research prototype and not intended for production environments.
-
-# License
-
-Copyright 2022 Rafael Pires
-
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
-
-    http://www.apache.org/licenses/LICENSE-2.0
-
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.
+# Credit
+Rafael Pires
